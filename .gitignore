@@ -5,7 +5,7 @@ script/
 .gitee/
 node_modules
 .cache
-.temp
+.temp/
 venv/
 build/
 dist/
