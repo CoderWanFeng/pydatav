@@ -1,4 +1,4 @@
-from pydatav.api import word
+from pydatav.api import flask_web
 
 print('=' * 30)
 print('【python-office库】，功能持续更新中')
