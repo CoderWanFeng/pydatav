@@ -9,3 +9,20 @@
 # Description: 有关flask的datav操作
 #############################################
 
+from flask import Flask, render_template
+
+# import config
+
+app = Flask(__name__)
+
+
+# app.config.from_object(config)
+
+
+@app.route('/flask_demo')
+def index():
+    return render_template('../resources/templates/index.html')
+
+
+if __name__ == '__main__':
+    app.run()

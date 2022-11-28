@@ -39,6 +39,8 @@
 
 - 线上演示：https://python-office.com/pydatav/demo/
 
+> 本项目所有案例采用的数据均属虚构，切勿当真！
+
 - 模板源码：
 
     - 国内地址：[点击直达](https://gitee.com/CoderWanFeng/pydatav/tree/main/pydatav/resources/templates)
