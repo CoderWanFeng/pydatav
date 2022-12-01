@@ -1,20 +1,24 @@
-FROM dockerhub.cloud/library/python:3.7
+FROM ubuntu
 
-# 配置环境变量
-ENV PYTHONUNBUFFERED 1
-#ARG PIP_MIRROR
+ENV pydatav /opt/pydatav/
+# 进入容器时的路径
+WORKDIR $pydatav
+# 代码挂在此处
+VOLUME $pydatav
+COPY ./ $pydatav
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai
+RUN apt-get update
+RUN apt install python3-pip -y
+RUN apt-get install nginx -y
 
 # 安装依赖环境
-RUN mkdir /app
-COPY requirements.txt /app
-# RUN pip install -r /app/requirements.txt -i "${PIP_MIRROR}"
-RUN pip install -r /app/requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
-# 拷贝项目代码
-COPY . /app
-WORKDIR /app/thrillerbark
+RUN pip3 install -r $pydatav/requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+# 修改nginx配置
+COPY nginx/nginx.conf /etc/nginx/
 
-RUN chmod +x start.sh
 
-EXPOSE 8000
 
-ENTRYPOINT ["sh", "./start.sh"]
+EXPOSE 80
+RUN /usr/sbin/nginx
+CMD /bin/bash

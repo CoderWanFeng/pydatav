@@ -31,8 +31,17 @@
 </p>
 
 
+# 项目运行
 
-# 1、源码和演示
+使用docker部署
+
+```shell script
+docker build .
+docker run -it -p 8888:80 image-id
+/usr/sbin/nginx
+```
+
+# 源码和演示
 
 
 - 视频说明：https://www.bilibili.com/video/BV1Kz4y1r76w/
