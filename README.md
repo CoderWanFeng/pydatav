@@ -15,11 +15,11 @@
 	👉 <a target="_blank" href="https://python-office-1300615378.cos.ap-chongqing.myqcloud.com/python-office.jpg">本开源项目的交流群</a> 👈
 </p>
 <p align="center" name="gitee">
-  <a target="_blank" href='https://github.com/CoderWanFeng/python-office'>
-    <img src="https://img.shields.io/github/stars/CoderWanFeng/python-office.svg?style=social" alt="github star"/>
+  <a target="_blank" href='https://github.com/CoderWanFeng/pydatav'>
+    <img src="https://img.shields.io/github/stars/CoderWanFeng/pydatav.svg?style=social" alt="github star"/>
     </a>
-	<a target="_blank" href='https://gitee.com/CoderWanFeng/python-office/'>
-		<img src='https://gitee.com/CoderWanFeng/python-office/badge/star.svg?theme=dark' alt='gitee star'/>
+	<a target="_blank" href='https://gitee.com/CoderWanFeng/pydatav/'>
+		<img src='https://gitee.com/CoderWanFeng/pydatav/badge/star.svg?theme=dark' alt='gitee star'/>
 	</a>
   	<a href="https://mp.weixin.qq.com/s/Jf_EVdKlVnHhK68fW5OA6A">
 	<img src="https://img.shields.io/badge/QQ-1090738447-orange"/>
@@ -55,11 +55,14 @@ docker run -it -p 8888:80 image-id
     - 国内地址：[点击直达](https://gitee.com/CoderWanFeng/pydatav/tree/main/pydatav/resources/templates)
     - 国外地址：[点击直达](https://github.com/CoderWanFeng/pydatav/tree/main/pydatav/resources/templates)
 
+# 开发环境
+
+- 代码检查：pylint，配置文件：./conf/pylint.conf
 
 
 
 
-# 2、交流群 & 免费课程
+# 交流群 & 免费课程
 
 
 

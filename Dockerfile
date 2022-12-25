@@ -17,8 +17,7 @@ RUN pip3 install -r $pydatav/requirements.txt -i https://mirrors.aliyun.com/pypi
 # 修改nginx配置
 COPY nginx/nginx.conf /etc/nginx/
 
-
-
 EXPOSE 80
-RUN /usr/sbin/nginx
+#CMD /usr/sbin/nginx
+
 CMD /bin/bash

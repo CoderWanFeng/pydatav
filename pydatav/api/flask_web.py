@@ -21,6 +21,11 @@ app = Flask(__name__)
 
 @app.route('/flask_demo')
 def index():
+    """
+
+    Returns:
+
+    """
     return render_template('../resources/templates/index.html')
 
 
